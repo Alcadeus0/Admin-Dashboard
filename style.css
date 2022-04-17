@@ -1,11 +1,9 @@
 :root{
     --size: 25px;
 }
-
 *{
     font-family: 'Roboto', sans-serif;
 }
-
 body{
     margin: 0px;
     border: 0px;
@@ -181,15 +179,55 @@ div > span:first-of-type{
 }
 
 .card > div{
-    font-size: 12px;
+    font-size: 14px;
+    color: hsl(220, 13%, 60%);
 }
 .card > div::first-line{
     font-size: 18px;
     font-weight: 700;
+    color: black;
 }
 
 .card{
     display: flex;
     flex-direction: column;
     padding: 20px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.img{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+}
+
+.trend {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    gap: 10px;
+    color: hsl(220, 13%, 60%);
+    font-size: 15px;
+}
+.trend img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.trend div{
+    display: flex;
+    gap: 20px;
+}
+.trend > div > div{
+    display: inline-block;
+}
+.trend > div > div::first-line{
+    color: black;
+}
+
+img:hover, button:hover, #searchbar:hover{
+    cursor: pointer;
 }
